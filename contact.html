@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Contact Me | web and mobile app developer</title>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <!-- <img src="img/ciise.png" alt="my portfolio" id="logo" /> -->
+          <a href="index.html">
+            <img src="img/ciise.png" alt="my portfolio" id="logo"
+          /></a>
+          <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="about.html">About </a></li>
+            <li><a href="work.html">Work </a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- section A : Contact Form -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          Thanks for taking the time to reach out. How can I help you today?
+        </p>
+        <form>
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Adress"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+            >
+            </textarea>
+          </div>
+          <button type="submit" class="btn-dark">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- section B: Contact Info  -->
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>isibrahiim@gmail.com</p>
+          </div>
+
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>(380) 99-030-42-97</p>
+          </div>
+
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>Mayakovs'koho St, Kiev</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section C: Tagline -->
+    <section id="contact-c" class="bg-main py-4">
+      <div class="container">
+        <h1>Let's Start Your Next Project</h1>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <!-- <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2021. All Rights Reserved</p>
+        <div class="social">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </footer> -->
+    <footer id="main-footer" class="py-2">
+      <div class="footer-content container">
+        <div>
+          <a href="index.html"><img src="./img/ciise.png" alt="news grid" /></a>
+
+          <p>
+            Welcome to My Personal Porfolio Website, I create all kinds of
+            Websites and Mobile Apps
+          </p>
+        </div>
+        <div>
+          <h3>Email new letter</h3>
+          <p>Subscribe To Get The Latest Updates!</p>
+
+          <form method="POST" class="contact-form">
+            <input
+              type="email"
+              placeholder="Enter Email..."
+              class="email-input"
+              required
+            />
+            <input
+              type="button"
+              value="Subscribe"
+              class="btn btn-primary"
+              onclick="sendEmail()"
+            />
+          </form>
+
+          <!-- <form method="post">
+            <input type="button" value="Send Email" onclick="sendEmail()" />
+          </form> -->
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul class="list">
+            <li>
+              <i class="fas fa-chevron-right"></i>
+              <a href="#">Help & Support</a>
+            </li>
+            <li>
+              <i class="fas fa-chevron-right"></i>
+              <a href="#">Privicy Policy</a>
+            </li>
+            <li>
+              <i class="fas fa-chevron-right"></i>
+              <a href="about.html">About Us</a>
+            </li>
+            <li>
+              <i class="fas fa-chevron-right"></i>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Have Project?</h3>
+          <p>
+            Any Type Of Query & Discussion, Click the Button Below, I`m
+            Available
+          </p>
+          <a href="contact.html" class="btn btn-secondary"
+            >Get Free Consultation</a
+          >
+        </div>
+        <div class="inner-footer">
+          <p>This Website Was Designed and Developed By Eng: Isse S.Ibrahim</p>
+          <p>Copyright &copy; 2021 All Rights Reserved</p>
+          <div class="social">
+            <a href="https://facebook.com/issefr"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/isibrahiim/">
+              <i class="fab fa-instagram"></i
+            ></a>
+
+            <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="./js/typewriter.js"></script> -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
