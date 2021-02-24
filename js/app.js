@@ -1,6 +1,6 @@
 // Send Email Js Function
 function sendEmail() {
-  let emailInput = document.querySelector(".email-input").value;
+  let emailInput = document.querySelector(".email-input2").value;
   Email.send({
     SecureToken: "4a1a26e2-36a8-41ef-b409-308c841b9c0a",
     Host: "smtp.gmail.com",
@@ -10,17 +10,10 @@ function sendEmail() {
     From: "mezdunaame@gmail.com",
     Subject: `${emailInput} has Subscribed To Your Website`,
     Body: `This Email: ${emailInput} Has Subscribed To Your Website`,
-    // Attachments: [
-    //   {
-    //     name: "smtpjs.png",
-    //     path:
-    //       "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png",
-    //   },
-    // ],
   }).then((message) =>
     alert(` ${emailInput} You Have successfully Subscribed To Newsletter `)
   );
-  document.querySelector(".email-input").value = "";
+  document.querySelector(".email-input2").value = "";
 }
 
 //sticky navigation
